@@ -1,0 +1,642 @@
+.login-wrapper {
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  /* background-color: beige; */
+  /* width: 978px; */
+}
+.login-inner {
+  max-width: 1200px;
+  height: 669px;
+  justify-content: center;
+  display: flex;
+  margin: 0 auto;
+}
+.login-left {
+  /* width: 440px; */
+  height: 100%;
+  display: flex;
+
+  flex-direction: column;
+  /* align-items: flex-start; */
+  padding-bottom: 60px;
+}
+.login-hd {
+  padding-top: 14px;
+  flex: 1 1 0%;
+
+  /* text-align: left; */
+}
+.login-content {
+  width: 320px;
+
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+.login-content-1 {
+  flex: 3 5 0%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-bottom: 10px;
+}
+.login-content-1 .login-title {
+  width: 100%;
+  height: auto;
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 42px;
+}
+.login-box .sns-login {
+  border-radius: 3px;
+  overflow: hidden;
+  height: 45px;
+  /* box-shadow: 0 3px 2px rgba(0, 0, 0, 0.1); */
+  /* line-height: 20; */
+
+  font-weight: 400;
+  font-size: 17px;
+  /* text-align: center; */
+  margin-bottom: 16px;
+  /* display: table; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.login-box .sns-login img {
+  /* display: inline-block; */
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+}
+
+.login-box .sns-login p {
+  line-height: 40px;
+
+  font-weight: 700;
+  font-size: 17px;
+}
+.login-box .etc-login {
+  background-color: rgb(255, 255, 255);
+  border-radius: 3px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgb(240, 240, 240);
+}
+
+.login-box .etc-login a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color:black;
+}
+/* .login-box .etc-login span {
+  font-weight: 400;
+  font-size: 13px;
+  cursor: pointer;
+  line-height: 30px;
+  height: 30px;
+  width: 100%;
+  display: block;
+} */
+.hr-span {
+  width: 100%;
+  height: 1px;
+  background-color: red;
+}
+.login-span {
+  width: 320px;
+  text-align: center;
+  font-size: 12px;
+  line-height: 20px;
+  color: #7f7f7f;
+  border-top: 1px solid #e3e3e3a8;
+  padding-top: 20px;
+}
+.login-left.email-left {
+  padding-bottom: 40px;
+}
+.login-hd.email-hd {
+  flex: 0.9 1 0%;
+}
+.login-title.email-title {
+  width: 100%;
+  height: auto;
+  font-size: 36px;
+  line-height: 42px;
+  margin-bottom: 35px;
+}
+
+.login-content-2 {
+  flex: 3 3 0%;
+  display: flex;
+  flex-direction: column;
+  /* margin: 0 auto; */
+}
+.login-content-2.student {
+  flex: 3 1 0%;
+}
+
+.login-content-2 .email-login-title {
+  margin-bottom: 15px;
+}
+.login-content-2 .email-login-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: auto;
+
+  /* width: 84%; */
+}
+.login-content-2.student .email-login-box {
+  height: auto;
+}
+.login-content-2 .email-login-box p {
+  color: #ac4040;
+  font-size: 11px;
+  font-weight: 600;
+  height: 15px;
+  text-indent: 5px;
+  line-height: 15px;
+  padding-top: 2px;
+}
+.login-content-2 .email-div {
+  margin-bottom: 25px;
+  width: 100%;
+
+  /* flex: 5; */
+}
+.login-content-2 .email-div label {
+  display: block;
+  width: 100%;
+  line-height: 20px;
+  margin-bottom: 8px;
+  text-indent: 5px;
+  font-weight: 500;
+}
+.login-content-2 .email-div input.inp_login_email,
+.login-content-2 .email-div input.inp_login_password {
+  display: block;
+  width: 100%;
+  height: 45px;
+  margin-top: 4px;
+  border-radius: 3px;
+  border: 1px solid rgba(70, 68, 68, 0.5);
+  text-indent: 5px;
+  outline: 2px;
+}
+.login-content-2 .email-div input.inp_login_email:focus,
+.login-content-2 input.inp_login_password:focus {
+  border: 1px solid rgb(226, 136, 94);
+}
+.login-content-2 .btn-login {
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  background-color: rgb(52, 152, 219) !important;
+  color: #ffff;
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 3px 2px rgba(0, 0, 0, 0.1);
+  border: 0;
+}
+.login-content-2 .btn-signup {
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  background-color: rgb(151, 151, 151);
+  color: #ffff;
+  font-size: 15px;
+  font-weight: 500;
+  border-radius: 5px;
+
+  box-shadow: 0 3px 2px rgba(0, 0, 0, 0.1);
+  border: 0;
+  margin: 10px 0;
+}
+.login-content-2 .login-info-div {
+  width: 100%;
+  height: 50px;
+  /* line-height: 35px; */
+  font-size: 12px;
+  color: #7f7f7f;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.login-content-2 .login-info-div input {
+  margin-right: 3px;
+}
+.login-content-2 .login-info-div a {
+  font-size: 12px;
+  color: #7f7f7f;
+}
+.login-span.login-span-email {
+  border-top: none;
+  border-bottom: 1px solid #e3e3e3a8;
+  padding-bottom: 10px;
+}
+
+.login-p {
+  width: 100% !important;
+  padding-top: 10px !important;
+  color: rgb(52, 152, 219) !important;
+  font-size: 15px !important;
+  font-weight: 700 !important;
+  height: 40px !important;
+  text-indent: 0 !important;
+  line-height: 15px !important;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  /* padding-top: 5px !important; */
+}
+.login-p span {
+  /* width: 300px; */
+  height: 20px;
+  cursor: pointer;
+
+  /* margin: 0 auto; */
+}
+/* .login-content-2 .login-info-div {
+  display: flex;
+  justify-content: space-between;
+} */
+/* .login-content-2 .login-info-div a:first-child {
+  float: left;
+  cursor: pointer;
+}
+.login-content-2 .login-info-div a:last-child {
+  float: right;
+  cursor: pointer;
+}
+.login-content-2 .sign-up-div {
+  width: 100%;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+} */
+/* .hidden{
+    display: none;
+} */
+
+/* LOGIN - RGIHT */
+.login-right {
+  /* width: 760px; */
+  /* width: 560px; */
+  flex: 1.9;
+  overflow: hidden;
+}
+.login-imagebox {
+  width: 120%;
+  height: 100%;
+  overflow: hidden;
+  /* position: relative; */
+}
+.login-imagebox > image {
+  /* position:absolute; */
+  /* left: 0; */
+}
+
+.email-login-box .login-span-pass.login-span-email-pass {
+  font-size: 14px;
+  text-align: center;
+  line-height: 1.5em;
+  color: rgb(127, 127, 127);
+  margin-top: 30px;
+}
+.email-login-box .email-div-pass {
+  margin-top: 20px;
+}
+.email-div-pass .inp_email_send {
+  display: block;
+  width: 100%;
+  height: 45px;
+  margin-top: 4px;
+  border-radius: 3px;
+  border: 1px solid rgba(70, 68, 68, 0.5);
+  text-indent: 10px;
+  outline: 2px;
+  font-size: 13px;
+}
+.email-div-pass .inp_email_send::placeholder {
+  color: rgb(190, 190, 190);
+}
+.email-login-box .btn-send-email {
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  background-color: rgb(52, 152, 219) !important;
+  color: #ffff;
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 3px 2px rgba(0, 0, 0, 0.1);
+  border: 0;
+  margin-top: 20px;
+}
+.password-find-wrapper {
+  width: 100%;
+  height: 100%;
+}
+.password-find-wrapper .password-find-inner {
+  width: 600px;
+  height: 840px;
+  margin: 0 auto;
+  padding-top: 100px;
+}
+.password-find-wrapper .password-find-inner .logo-h1 {
+  text-align: center;
+  width: 100%;
+  height: auto;
+}
+.password-find-wrapper .password-find-inner .logo-h1 a {
+  width: 224px;
+}
+.password-find-wrapper .password-find-inner .logo-h1 img {
+  display: block;
+  width: 100%;
+}
+
+.password-find-inner .password-find-step-box {
+  width: 100%;
+  height: auto;
+  margin-top: 20px;
+}
+.password-find-step-box nav {
+  display: flex;
+  justify-content: center;
+  height: 30px;
+}
+.password-find-step-box .circle-1,
+.password-find-step-box .circle-2,
+.password-find-step-box .circle-3 {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.password-find-step-box .circle-1 > span,
+.password-find-step-box .circle-2 > span,
+.password-find-step-box .circle-3 > span {
+  border-radius: 100%;
+  background-color: rgb(224, 224, 224);
+  text-align: center;
+  line-height: 23px;
+  color: rgb(255, 255, 255);
+  font-weight: normal;
+  font-size: 11px;
+  width: 23px;
+  height: 23px;
+}
+.password-find-step-box nav > div > .active {
+  border-radius: 100%;
+  background-color: rgb(52, 152, 219);
+  text-align: center;
+  line-height: 30px;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  width: 30px;
+  height: 30px;
+  font-size: 14px;
+}
+.password-find-step-box .circle-detail {
+  width: 85px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.password-find-step-box .circle-detail > span {
+  width: 5px;
+  height: 5px;
+  border-radius: 100%;
+  background-color: rgb(224, 224, 224);
+  text-align: center;
+  line-height: 2.2em;
+  color: rgb(255, 255, 255);
+  font-weight: normal;
+  margin: 0 10px;
+}
+
+.password-find-wrapper .password-find-inner h2 {
+  font-size: 18px;
+  text-align: center;
+  line-height: 1.2em;
+  color: rgb(64, 64, 64);
+  font-weight: bold;
+  margin-top: 40px;
+}
+
+.password-find-wrapper .password-find-inner .password-find-step-1,
+.password-find-wrapper .password-find-inner .password-find-step-2,
+.password-find-wrapper .password-find-inner .password-find-step-3 {
+  width: 440px;
+  height: auto;
+  margin: 0 auto;
+}
+.password-find-step-1 .password-find-content,
+.password-find-step-2 .password-find-content,
+.password-find-step-3 .password-find-content {
+  width: 100%;
+
+  margin-top: 30px;
+}
+.password-find-step-1 .password-find-content .inp_email {
+  padding: 6px 12px;
+
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+
+  box-sizing: border-box;
+
+  width: 100%;
+  height: 50px;
+  color: rgb(190, 190, 190);
+  box-shadow: none;
+  font-size: 13px;
+}
+.password-find-content .btn_next {
+  background-color: rgb(52, 152, 219);
+  height: 48px;
+  width: 100%;
+  border-radius: 4px;
+  color: #fff;
+  font-weight: bold;
+  margin-top: 20px;
+}
+.password-find-step-2 .password-find-certifbox {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  position: relative;
+}
+.password-find-step-2 .password-find-certifbox .inp_number {
+  padding: 6px 12px;
+
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+
+  box-sizing: border-box;
+
+  width: 76%;
+  height: 50px;
+  color: rgb(190, 190, 190);
+  box-shadow: none;
+  font-size: 13px;
+}
+.password-find-step-2 .password-find-certifbox .btn_number {
+  width: 100px;
+  height: 50px;
+  background-color: rgb(52, 152, 219);
+  border-radius: 3px;
+  color: #fff;
+  font-weight: bold;
+}
+
+.password-find-step-2 .password-find-certifbox span {
+  position: absolute;
+  z-index: 1;
+  bottom: -26px;
+  left: 10px;
+  font-size: 11px;
+  text-align: left;
+  line-height: 1.9em;
+  color: rgb(127, 127, 127);
+}
+.password-find-step-2 .password-find-certifbox svg {
+  color: #f93564;
+  font-size: 13px;
+}
+.password-find-step-3 input {
+  padding: 6px 12px;
+
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+
+  box-sizing: border-box;
+
+  width: 100%;
+  height: 50px;
+  color: rgb(190, 190, 190);
+  box-shadow: none;
+  font-size: 13px;
+  margin-bottom: 20px;
+}
+.password-find-step-3 .password-find-3-div {
+  display: flex;
+  width: 100%;
+  height: auto;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 24px;
+}
+.password-find-step-3 .password-find-3-div > span {
+  font-size: 10px;
+  line-height: 1.8em;
+  color: rgb(127, 127, 127);
+}
+.password-find-step-3 .password-find-3-div span > svg {
+  color: rgb(231, 76, 60);
+  font-size: 14px;
+  margin-right: 6px;
+  /* line-height: ; */
+}
+.password-find-wrapper .password-find-linebox {
+  width: 100%;
+  height: 30px;
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.password-find-wrapper .password-find-linebox .password-find-line {
+  width: 100%;
+  height: 1px;
+  background-color: #e3e3e3a8;
+}
+.password-find-wrapper .password-find-linebox .password-find-line-span {
+  position: absolute;
+  z-index: 1;
+  font-size: 14px;
+  text-align: center;
+  line-height: 1.5em;
+  color: rgb(127, 127, 127);
+  width: 40px;
+  height: 20px;
+  background-color: #fff;
+  left: 50%;
+  margin-left: -20px;
+}
+.password-find-wrapper .password-find-button {
+  width: 100%;
+}
+.password-find-wrapper .password-find-button button {
+  display: block;
+  width: 160px;
+  height: 20px;
+  font-size: 14px;
+  text-align: center;
+  line-height: 1.5em;
+  color: rgb(64, 64, 64);
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+@media all and (max-width: 1000px) {
+  .login-inner {
+    width: 100%;
+  }
+  .login-left {
+    /* width: 440px; */
+    flex: 1;
+    height: 100%;
+    display: flex;
+
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: flex-start; */
+    padding-left: 0;
+    padding-bottom: 40px;
+  }
+
+  .login-hd {
+    padding-left: 40px;
+
+    /* text-align: left; */
+  }
+
+  .login-content {
+    /* width: 100%; */
+    margin: 0 auto;
+  }
+  .login-content-1 {
+  }
+  .login-content-1 .login-title {
+    text-align: center;
+  }
+  .login-span {
+    width: 320px;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .login-right {
+    display: none;
+  }
+}
