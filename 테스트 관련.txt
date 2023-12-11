@@ -1,0 +1,17 @@
+server 폴더, client 폴더 각각 실행
+
+server -> nodemon app.js << 
+client -> npm start <<
+
+
+
+실행시 나오는 페이지에서 바로 테스트 가능
+
+1. 이미지 파일 적용
+ client/src/pages/TestPage.js
+
+2. 기존에 적용했던 하프톤효과 소스코드
+ client/src/pages/DotTest2.js
+
+테스트 방법
+-> TestPage.js 에서 불러온 `이미지 데이터 loadImage`를 새로운 하프톤 효과 소스코드에 이용
