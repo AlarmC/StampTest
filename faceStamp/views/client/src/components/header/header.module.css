@@ -1,0 +1,82 @@
+.sideMenu { display: none;}
+@media all and (max-width: 1000px){
+    .sideMenu {
+        display: block;
+        position: fixed;
+        width: 250px;
+        height: 100%;
+        background-color: white;
+        right: 0;
+        top: 0;
+        z-index: 600;
+        padding: 20px;
+    }
+    .sideMenu > .user_area {
+        height: 40px;
+        font-size: 16px;
+        line-height: 20px;
+    }
+    .sideMenu > .user_area > .user_icon{
+        vertical-align: top;
+        margin-right: 5px;
+    }
+    .sideMenu > .user_area > .user_name {
+        display: inline-block;
+    }
+    .sideMenu > hr {
+        width: 170px;
+        margin: 2px 0;
+        margin-top: 30px;
+        border : 1px solid rgb(35,172,160);
+    }
+    .sideMenu > .menu_area > ul > li {
+        font-weight: bold;
+        font-size: 20px;
+        margin: 15px 0;
+        list-style: disc;
+        margin-left: 20px;
+    }
+    .sideMenu > .menu_area > .tag_area {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        margin-left: 10px;
+    }
+    .sideMenu > .side_logout_btn {
+        position:absolute;
+        right: 20px;
+        bottom: 30%;
+        cursor: pointer;
+        text-align: center;
+        color: white;
+        font-size: 12px;
+    }
+    .sideMenu > .side_logout_btn > div {
+        width: 70px;
+        height: 30px;
+        line-height: 30px;
+        border-radius: 15px;
+        background-color: rgb(91, 91, 91);
+    }
+    .sideMenu > .side_close_btn {
+        position:absolute;
+        right: 20px;
+        bottom: 20px;
+        cursor: pointer;
+        text-align: center;
+        color: red;
+        font-size: 12px;
+    }
+    .sideMenu > .side_close_btn > div { line-height: 15px;}
+    .darken {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5); /* 어두운 배경색 지정 (여기서는 50% 투명도로 설정) */
+        z-index: 9999; /* 다른 요소들보다 위에 나타나도록 설정 */
+        display: none; /* 기본적으로는 숨겨진 상태로 시작 */
+    }
+}

@@ -1,0 +1,35 @@
+GET https://192.168.35.138:5000/api/notice
+
+###
+POST http://192.168.35.138:5000/api/signin
+Content-Type: application/json; charset=UTF-8
+
+{
+	"user_email" : "abc123@naver.com",
+	"user_password" : "123"
+}
+
+###
+POST https://192.168.35.138:5000/api/tokenEnd
+Content-Type: application/json; charset=UTF-8
+
+###
+POST https://192.168.35.138:5000/api/select_class
+Content-Type: application/json; charset=UTF-8
+
+{
+	"where" : "1"
+}
+
+###
+POST https://192.168.35.138:5000/api/select_gallery
+Content-Type: application/json; charset=UTF-8
+
+###
+POST https://192.168.35.138:5000/api/select_chapter_qna
+Content-Type: application/json; charset=UTF-8
+
+{
+	"no" : 182,
+	"chapter" : "chapter 01"
+}

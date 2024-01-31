@@ -1,0 +1,392 @@
+.dot_container {
+    display: grid;
+    place-items: center;
+    height: 87.7%;
+    background-color: rgb(246, 246, 246);
+}
+.dot_div {
+    width: 930px;
+    height: 490px;
+    display: flex;
+}
+.main_contents{
+    width: 33.3%;
+    height: 100%;
+    position: relative;
+}
+.main_contents:not(:last-child){
+    border-right: 1px solid rgb(211, 211, 211);
+}
+.main_contents > .main_contents_svg {
+    width: 150px;
+    height: 150px;
+    text-align: center;
+    border-radius: 50%;
+    margin: 30px auto;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+}
+.main_contents:first-child > .main_contents_svg { background-color: rgb(228, 65, 65); }
+.main_contents:nth-child(2) > .main_contents_svg { background-color: rgb(81, 189, 178); }
+.main_contents:last-child > .main_contents_svg { background-color: rgb(67, 67, 67); }
+
+.main_contents > .main_contents_svg > svg { margin: 35px}
+
+.main_contents > .main_contents_title {
+    text-align: center;
+    height: 40px;
+    font-size: 40px;
+    margin-top: 60px;
+}
+
+.main_contents > .main_contents_text {
+    text-align: center;
+    font-size: 18px;
+    margin: 35px 35px 0;
+    line-height: 22px;
+    color: rgb(192, 192, 192);
+}
+.main_contents .main_select_btn {
+    width: 130px;
+    height: 40px;
+    font-size: 17px;
+    line-height: 25px;
+    border: 1px solid gray;
+    border-radius: 20px;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+@media all and (max-width: 1000px){
+    .dot_div {
+        width: 630px;
+        height: 360px;
+        display: flex;
+    }
+
+    .main_contents > .main_contents_svg {
+        width: 130px;
+        height: 130px;
+        text-align: center;
+        border-radius: 50%;
+        margin: 20px auto;
+        box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+    }
+    .main_contents > .main_contents_svg > svg { 
+        margin: 35px; 
+        width: 60px;
+        height: 60px;
+    }
+
+    .main_contents > .main_contents_title {
+        /* width: 150px; */
+        text-align: center;
+        font-size: 30px;
+        margin-top: 40px;
+    }
+
+    .main_contents > .main_contents_text {
+        text-align: center;
+        font-size: 13px;
+        margin: 20px 20px 0;
+        line-height: 18px;
+        color: rgb(192, 192, 192)
+    }
+
+    .main_contents .main_select_btn {
+        width: 100px;
+        height: 30px;
+        line-height: 30px;
+        font-size: 13px;
+        line-height: 25px;
+        border: 1px solid gray;
+        border-radius: 20px;
+        position: absolute;
+        bottom: 10px;
+        left: 50%;
+        transform: translate(-50%, 0);
+    }
+}
+
+/* 사이즈 선택 */
+.setting_container {
+    height: 87.7%;
+    background-color: rgb(246, 246, 246);
+}
+
+.dot_header { margin-left: 50px; padding-top: 20px;}
+.dot_header > .dot_header_title {
+    font-size: 13px;
+    color: rgb(192, 192, 192);
+    line-height: 18px;
+}
+.dot_header > .dot_header_contents {
+    font-size: 30px;
+    color: rgb(81, 189, 178);
+    font-weight: 500;
+}
+
+.dot_contents {
+    /* display: grid;
+    place-items: center; */
+    height: 400px;
+    /* padding-top: 50px; */
+    margin-top: 100px;
+}
+
+.dot_contents > .dots_contents_div {
+    width: 100%;
+    height: 270px;
+    border-bottom: 1px solid rgb(81, 189, 178);
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.dot_contents > .dots_contents_div .dots_contents_outcircle {
+    border: 3px solid white;
+    border-radius: 50%;
+    text-align: center;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+    margin: 0 10px;
+    background-color: white;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+.dot_contents > .dots_contents_div > .dots_divide { position: relative;}
+.dot_contents > .dots_contents_div > .dots_divide:first-child > .dots_contents_outcircle { width: 83px; height: 83px;}
+.dot_contents > .dots_contents_div > .dots_divide:nth-child(2) > .dots_contents_outcircle { width: 91px; height: 91px;}
+.dot_contents > .dots_contents_div > .dots_divide:nth-child(3) > .dots_contents_outcircle { width: 115px; height: 115px;}
+.dot_contents > .dots_contents_div > .dots_divide:nth-child(4) > .dots_contents_outcircle { width: 130px; height: 130px;}
+.dot_contents > .dots_contents_div > .dots_divide:nth-child(5) > .dots_contents_outcircle { width: 190px; height: 190px;}
+.dot_contents > .dots_contents_div > .dots_divide:last-child > .dots_contents_outcircle { width: 215px; height: 215px;}
+
+.dot_contents > .dots_contents_div .dots_contents_outcircle > .dots_contents_incircle {
+    border: 1px solid rgb(81, 189, 178);
+    border-radius: 50%;
+    text-align: center;
+    position: relative;
+    transition: background-color 0.5s ease;
+}
+.dot_contents > .dots_contents_div .dots_contents_outcircle > .dots_contents_incircle.seleted_incircle {
+    border: 1px solid rgb(81, 189, 178);
+    background-color: rgb(81, 189, 178);
+    color:white;
+    border-radius: 50%;
+    text-align: center;
+    position: relative;
+}
+.dots_divide:first-child > .dots_contents_outcircle > .dots_contents_incircle { width: 77px; height: 77px; font-size: 25px;}
+.dots_divide:nth-child(2) > .dots_contents_outcircle > .dots_contents_incircle { width: 85px; height: 85px; font-size: 27px;}
+.dots_divide:nth-child(3) > .dots_contents_outcircle > .dots_contents_incircle { width: 109px; height: 109px; font-size: 30px;}
+.dots_divide:nth-child(4) > .dots_contents_outcircle > .dots_contents_incircle { width: 124px; height: 124px; font-size: 35px;}
+.dots_divide:nth-child(5) > .dots_contents_outcircle > .dots_contents_incircle { width: 184px; height: 184px; font-size: 43px;}
+.dots_divide:last-child > .dots_contents_outcircle > .dots_contents_incircle { width: 209px; height: 209px; font-size: 50px;}
+
+.dots_contents_incircle > .dots_contents_center_num {
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    transform:translate(-50%, 50%)
+}
+.dots_contents_incircle > .dots_contents_bottom_mm {
+    position: absolute;
+    font-size: 15px;
+    bottom: 0;
+    left: 50%;
+    transform:translate(-50%, 0)
+}
+
+.dot_contents > .dots_contents_div:last-child {
+    width: 100%;
+    height: 60px;
+    border-bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.dot_contents > .dots_contents_div:last-child > .dots_divide > .dots_contents_outcircle {
+    border: 0; height: 50px;
+    border-radius: 0;
+    background-color: rgb(246, 246, 246);
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0);
+}
+.dots_divide > .dots_bottom {
+    content: '';
+    position: absolute;
+    top: 0; 
+    left: 50%;
+    width: 1px;
+    height: 15px;
+    background-color: rgb(81, 189, 178); 
+}
+
+.dots_divide > .dots_bottom_circle {
+    width: 20px;
+    height: 20px;
+    border: 1px solid rgb(81, 189, 178);
+    border-radius: 50%;
+    position: absolute;
+    top: 25px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: border 0.5s ease;
+    cursor: pointer;
+    background-color: white;
+}
+.dots_divide > .dots_bottom_circle.seleted_bottom_circle {
+    border: 3px solid rgb(81, 189, 178);
+}
+
+.dots_btn_area {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.dots_btn_area button {
+    width: 100px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 13px;
+    line-height: 25px;
+    border: 1px solid gray;
+    border-radius: 20px;
+    margin: auto 10px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+.dots_btn_area > button:last-child { border: 1px solid rgb(228, 65, 65); background-color: rgb(228, 65, 65); color:white;}
+.dots_btn_area > a:last-child > button { border: 1px solid rgb(228, 65, 65); background-color: rgb(228, 65, 65); color:white;}
+
+/* 스타일 선택 */
+.dot_contents > .dots_contents_div .dots_contents_style_circle {
+    border: 3px solid white;
+    border-radius: 50%;
+    text-align: center;
+    box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.3);
+    margin: 0 10px;
+    background-color: white;
+    margin-bottom: 10px;
+    cursor: pointer;
+    width: 172px;
+    height: 172px;
+    transition: border 0.5s ease;
+}
+.dot_contents > .dots_contents_div .dots_contents_style_circle.selected_circle {
+    border: 3px solid rgb(81, 189, 178);
+}
+.dot_contents > .dots_contents_div .dots_contents_style_circle > img { margin: 1px;}
+
+.dot_contents > .dots_contents_div:last-child .dots_contents_style_circle {
+    border: 0; height: 50px;
+    border-radius: 0;
+    background-color: rgb(246, 246, 246);
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0);
+}
+
+.dot_contents > .dots_contents_div .dots_bottom_txt {
+    position: absolute;
+    height: 20px;
+    top: 25px;
+    font-size: 15px;
+    line-height: 20px;
+    right: 30%;
+    color: rgb(133, 133, 133);
+    cursor: default;
+}
+.dot_contents > .dots_contents_div .dots_divide:last-child .dots_bottom_txt{
+    right: 8%;
+}
+.dot_contents > .dots_contents_div .dots_bottom_tema_txt {
+    position: absolute;
+    height: 20px;
+    top: 25px;
+    font-size: 15px;
+    line-height: 20px;
+    right: 28%;
+    color: rgb(133, 133, 133);
+    cursor: default;
+}
+.dot_contents > .dots_contents_div .dots_divide:last-child .dots_bottom_tema_txt{
+    right: 18%;
+}
+
+/* 기본정보 입력 */
+.dot_contents > .dots_info_div {
+    width: 100%;
+    height: 270px;
+    border-bottom: 1px solid rgb(81, 189, 178);
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.dot_contents > .dots_info_div > div { margin-bottom: 80px;}
+.dot_contents > .dots_info_div > div > div { display: inline-block; margin-right: 20px; width: 50px; text-align: right;}
+.dot_contents > .dots_info_div > div > input { display: inline-block; border-radius: 20px; height: 36px; border: 1px solid rgb(192, 192, 192);}
+.dot_contents > .dots_info_div > div > input { width: 80px; margin-right: 8px; padding-left: 10px; font-size: 15px;}
+.dot_contents > .dots_info_div > div > p { height: 15px;}
+
+
+.dot_contents > .dots_info_div:last-child {
+    width: 100%;
+    height: 100px;
+    border-bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin-top: 50px;
+}
+
+.dot_contents > .dots_info_div > div > span { display: block;font-size: 13px; line-height: 18px;}
+.dot_contents > .dots_info_div > div > span:last-child { padding-left: 10px;}
+.dot_contents > .dots_info_div:last-child > div { margin-bottom: 90px}
+
+@media all and (max-width: 1000px) {
+    .dot_contents > .dots_contents_div > .dots_divide:first-child > .dots_contents_outcircle { width: 63px; height: 63px;}
+    .dot_contents > .dots_contents_div > .dots_divide:nth-child(2) > .dots_contents_outcircle { width: 68px; height: 68px;}
+    .dot_contents > .dots_contents_div > .dots_divide:nth-child(3) > .dots_contents_outcircle { width: 81px; height: 81px;}
+    .dot_contents > .dots_contents_div > .dots_divide:nth-child(4) > .dots_contents_outcircle { width: 100px; height: 100px;}
+    .dot_contents > .dots_contents_div > .dots_divide:nth-child(5) > .dots_contents_outcircle { width: 130px; height: 130px;}
+    .dot_contents > .dots_contents_div > .dots_divide:last-child > .dots_contents_outcircle { width: 155px; height: 155px;}
+    .dots_contents_incircle > .dots_contents_bottom_mm {
+        position: absolute;
+        font-size: 13px;
+        bottom: 0;
+        left: 50%;
+        transform:translate(-50%, 0)
+    }
+    .dots_divide:first-child > .dots_contents_outcircle > .dots_contents_incircle { width: 57px; height: 57px; font-size: 20px;}
+    .dots_divide:nth-child(2) > .dots_contents_outcircle > .dots_contents_incircle { width: 62px; height: 62px; font-size: 22px;}
+    .dots_divide:nth-child(3) > .dots_contents_outcircle > .dots_contents_incircle { width: 75px; height: 75px; font-size: 25px;}
+    .dots_divide:nth-child(4) > .dots_contents_outcircle > .dots_contents_incircle { width: 94px; height: 94px; font-size: 30px;}
+    .dots_divide:nth-child(5) > .dots_contents_outcircle > .dots_contents_incircle { width: 124px; height: 124px; font-size: 38px;}
+    .dots_divide:last-child > .dots_contents_outcircle > .dots_contents_incircle { width: 149px; height: 149px; font-size: 45px;}
+
+
+    /* 스타일 선택 */
+    .dot_contents > .dots_contents_div .dots_contents_style_circle {
+        border: 3px solid white;
+        border-radius: 50%;
+        text-align: center;
+        box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.3);
+        margin: 0 10px;
+        background-color: white;
+        margin-bottom: 10px;
+        cursor: pointer;
+        width: 146px;
+        height: 146px;
+        transition: border 0.5s ease;
+    }
+
+    .dot_contents > .dots_contents_div .dots_divide:last-child .dots_bottom_txt{
+        right: 3%;
+    }
+
+    .dot_contents > .dots_contents_div .dots_divide:last-child .dots_bottom_tema_txt{
+        right: 3%;
+    }
+}

@@ -1,0 +1,276 @@
+.login-wrapper {
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  /* background-color: beige; */
+  /* width: 978px; */
+}
+.login-inner {
+  width: 1200px;
+  height: 615px;
+  /* position: absolute;
+    top:50%;
+    margin-top: -307.5px; */
+  display: flex;
+  margin: 0 auto;
+  /* background-color: rgb(245, 245, 245); */
+  /* background-color: #fff; */
+  /* background-color: rgb(235, 235, 235); */
+}
+.login-left {
+  /* width: 440px; */
+  flex: 1;
+  height: 100%;
+  display: flex;
+
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: flex-start; */
+  padding-left: 40px;
+  padding-bottom: 40px;
+}
+.login-hd {
+  padding-top: 14px;
+  margin: 0 auto 20px;
+  /* flex: 1 1 0%; */
+
+  /* text-align: left; */
+}
+.login-content {
+  width: 320px;
+
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+.login-content-1 {
+  flex: 5 5 0%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.login-content-1 .login-title {
+  width: 100%;
+  height: auto;
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 42px;
+}
+.login-box .sns-login {
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 3px 2px rgba(0, 0, 0, 0.1);
+  /* line-height: 20; */
+
+  font-weight: 400;
+  font-size: 17px;
+  /* text-align: center; */
+  margin-bottom: 10px;
+  /* display: table; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.login-box .sns-login img {
+  /* display: inline-block; */
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+}
+.login-box .sns-login p {
+  /* display: table-cell; */
+
+  line-height: 40px;
+  /* background-color: #fff; */
+  font-weight: 500;
+  font-size: 17px;
+}
+
+.login-box .etc-login a {
+  /* text-align: right; */
+  /* margin-top: 10px; */
+  display: flex;
+  align-items: center;
+}
+/* .login-box .etc-login span {
+  font-weight: 400;
+  font-size: 13px;
+  cursor: pointer;
+  line-height: 30px;
+  height: 30px;
+  width: 100%;
+  display: block;
+} */
+.login-span {
+  width: 320px;
+  text-align: center;
+  font-size: 12px;
+  line-height: 20px;
+}
+
+.login-content-2 {
+  flex: 3 3 0%;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+.login-content-2.student {
+  flex: 3 1 0%;
+}
+
+.login-content-2 .email-login-title {
+  margin-bottom: 15px;
+}
+.login-content-2 .email-login-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 280px;
+  margin: 0 auto;
+  width: 84%;
+}
+.login-content-2.student .email-login-box {
+  height: 230px;
+}
+.login-content-2 .email-login-box p {
+  color: #ac4040;
+  font-size: 11px;
+  font-weight: 600;
+  height: 15px;
+  text-indent: 5px;
+  line-height: 15px;
+  padding-top: 2px;
+}
+.login-content-2 .email-div {
+  margin-bottom: 10px;
+  width: 100%;
+  /* flex: 5; */
+}
+.login-content-2 .email-div label {
+  display: block;
+  width: 100%;
+  line-height: 20px;
+  margin-bottom: 8px;
+  text-indent: 5px;
+  font-weight: 500;
+}
+.login-content-2 .email-div input.inp_login_email,
+.login-content-2 .email-div input.inp_login_password {
+  display: block;
+  width: 100%;
+  height: 40px;
+  margin-top: 4px;
+  border-radius: 3px;
+  border: 1px solid rgba(70, 68, 68, 0.5);
+  text-indent: 5px;
+  outline: 2px;
+}
+.login-content-2 .email-div input.inp_login_email:focus,
+.login-content-2 input.inp_login_password:focus {
+  border: 1px solid rgb(226, 136, 94);
+}
+.login-content-2 .btn-login {
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  background-color: rgb(52, 152, 219) !important;
+  color: #ffff;
+  font-size: 15px;
+  font-weight: 500;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 3px 2px rgba(0, 0, 0, 0.1);
+  border: 0;
+}
+.login-content-2 .btn-signup {
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  background-color: rgb(151, 151, 151);
+  color: #ffff;
+  font-size: 15px;
+  font-weight: 500;
+  border-radius: 5px;
+
+  box-shadow: 0 3px 2px rgba(0, 0, 0, 0.1);
+  border: 0;
+  margin: 10px 0;
+}
+.login-content-2 .login-info-div {
+  width: 100%;
+  height: 35px;
+  line-height: 35px;
+  font-size: 13px;
+}
+.login-content-2 .login-info-div a:first-child {
+  float: left;
+  cursor: pointer;
+}
+.login-content-2 .login-info-div a:last-child {
+  float: right;
+  cursor: pointer;
+}
+.login-content-2 .sign-up-div {
+  width: 100%;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+}
+/* .hidden{
+    display: none;
+} */
+
+/* LOGIN - RGIHT */
+.login-right {
+  /* width: 560px; */
+  flex: 2;
+}
+.login-imagebox {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+@media all and (max-width: 1000px) {
+  .login-inner {
+    width: 100%;
+  }
+  .login-left {
+    /* width: 440px; */
+    flex: 1;
+    height: 100%;
+    display: flex;
+
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: flex-start; */
+    padding-left: 0;
+    padding-bottom: 40px;
+  }
+
+  .login-hd {
+    padding-left: 40px;
+
+    /* text-align: left; */
+  }
+
+  .login-content {
+    /* width: 100%; */
+    margin: 0 auto;
+  }
+  .login-content-1 {
+  }
+  .login-content-1 .login-title {
+    text-align: center;
+  }
+  .login-span {
+    width: 100%;
+    text-align: center;
+  }
+
+  .login-right {
+    display: none;
+  }
+}

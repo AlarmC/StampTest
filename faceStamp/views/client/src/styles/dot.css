@@ -1,0 +1,440 @@
+.dot_left_menu {
+    margin-left: 10px;
+    width: 250px;
+}
+
+.dot_left_menu > hr {
+    margin: 2px 0;
+    border : 1px solid rgb(35,172,160);
+}
+.dot_menu_title {
+    font-size: 18px;
+    margin-bottom: 5px;
+    color: gray;
+}
+.bd_text { margin-left: 10px; font-size: 14px; font-weight: 400;}
+.dot_color_btn { display: inline-block; margin-left: 20px;}
+.dot_color_btn > span { font-size: 11px; line-height: 30px; margin-left: 20px;}
+.dot_color_btn > div {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: white;
+    vertical-align: middle;
+    margin-left: 20px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+}
+.dot_preview > .dot_preview_circle {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    border: 2px solid black;
+    overflow: hidden;
+    background-color: white;
+    border-radius: 50%;
+    margin:10px auto;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+}
+.dot_preview_circle > .stamp_circle_line {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    width: 50px;
+    height: 2px;
+    background-color: black;
+    transform: translateY(-50%);
+    z-index: 100;
+}
+.dot_preview_circle > .stamp_circle {
+    position: absolute;
+    top: 50%;
+    right: 50px;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background-color: black;
+    transform: translate(50%, -50%);
+    z-index: 100;
+}
+.dot_preview > img {
+    display: block;
+    width: 146px;
+    height: 146px;
+    margin:10px auto;
+}
+.dot_print_area {
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    margin: 20px;
+}
+@media print {
+    html, body {
+      height: auto;
+      margin: 0 !important;
+      padding: 0 !important;
+      overflow: hidden;
+    }
+    .dot_preview_dom {
+        margin: 30px;
+    }
+    /* div{
+        border: 2px solid black;
+        border-radius: 50%;
+    } */
+    img {
+        margin: 8px;
+    }
+}
+.dot_print_area > .dot_preview_dom{
+    display: block;
+    margin-left:100px;
+    margin-top: 100px;
+    border: 1px solid black;
+    border-radius: 50%;
+}
+.dot_print_area > .dot_preview_dom > img {
+    display: block;
+    margin:10px auto;
+}
+.dot_preview > .dot_preview_contents { margin-left: 5px;}
+.dot_preview > .dot_preview_contents > div {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    border-radius: 50%;
+    color:white;
+}
+.dot_preview > .dot_preview_contents > hr {
+    margin: 0;
+    display: inline-block;
+    width: 120px;
+    vertical-align: middle;
+    margin-bottom: 3px;
+}
+@media all and (max-width: 1200px){
+    .dot_preview > .dot_preview_contents > hr {
+        margin: 0;
+        display: inline-block;
+        width: 10vw;
+        vertical-align: middle;
+        margin-bottom: 3px;
+    }
+}
+
+.dot_preview > .dot_preview_contents > span {
+    font-size: 13px;
+
+}
+.dot_preview > .dot_preview_contents > .dot_preview_font {
+    display: block;
+    color: rgb(35,172,160);
+    font-size: 11px;
+    width: 40px;
+    line-height: 20px;
+    height: 20px;
+    text-align: left;
+    margin-bottom: 15px;
+}
+
+/* .dot_preview_circle >  */
+
+.dot_btn_div { cursor: pointer; width: 100px;}
+.dot_btn_div > div:last-child { text-align: center; font-size: 13px; }
+.dot_btn_area {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.dot_btn_area .dot_btn_div:nth-child(2n-1) .dot_menu_btn {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    padding: 20px;
+    box-sizing: border-box;
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3);
+}
+
+.dot_btn_area .dot_btn_div:nth-child(2n) .dot_menu_btn {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    padding: 20px;
+    border: 2px solid rgb(91, 91, 91);
+    box-sizing: border-box;
+}
+
+.stamp_area {
+    min-width: 700px;
+    min-height: 700px;
+    margin: 50px auto;
+
+}
+
+.stamp_area .stamp_div {
+    border-radius: 50%;
+    width: 470px;
+    height:470px;
+    overflow: hidden;
+    border: 2px solid black;
+
+}
+
+.dot_right_menu {
+    margin-right: 10px;
+    width: 250px;
+}
+.dot_right_menu > div:first-child {
+    display: block;
+    height: 80px;
+}
+.dot_right_menu > div > a { float: right; }
+.dot_right_menu > div > a > .btn_area { 
+    height: 52px; 
+    width: 40px; 
+    /* float: right; */
+    font-size: 11px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    margin-left: 15px;
+    cursor: pointer;
+}
+.dot_right_menu > div > a > .btn_area > .btn_circle {
+    background-color: rgb(35,172,160);
+    border: 1px solid rgb(35,172,160);
+    border-radius: 50%;
+}
+.dot_right_menu > div > a > .btn_area > .btn_circle > svg { margin: 5px; }
+.dot_right_menu > div > a > .btn_area > div:last-child { line-height: 12px; margin-top: 3px; color:rgb(35,172,160)}
+.dot_right_menu hr {
+    margin: 2px 0;
+    border : 1px solid rgb(35,172,160);
+}
+
+.dot_right_menu > div > svg {
+    float: right;
+    margin-right: 20px;
+}
+
+.stamp_canvas {
+    min-width: 450px;
+    min-height: 450px;
+    /* margin: 0 auto; */
+    /* border: 1px solid gray; */
+    box-sizing: border-box;
+    position: relative;
+    /* padding:125px; */
+}
+.stamp_canvas .clip_path_area {
+    /* position:relative;
+    width: 100%;
+    height: 100%;
+    clip-path: circle(31.5%); */
+    position: relative;
+    /* margin: 125px; */
+    /* border: 6px solid black; */
+    border-radius: 50%;
+    width: 450px;
+    height: 450px;
+    overflow: hidden;
+    background-color: white;
+    /* box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.3); */
+    /* left: 125px;
+    top: 125px; */
+    /* bottom: 50%; */
+    /* transform: translate(-50%, -50%); */
+}
+/* 도장 내 텍스트 */
+.stamp_canvas .stamp_dot_text {
+    /* position: absolute;
+    font-size: 50px;
+    left: 125px;
+    right: 0;
+    top: 125px;
+    transform: translate(-50%, -50%);
+    font-weight: bold; */
+    position: absolute;
+    font-size: 40px;
+    /* left: 125px;
+    top: 125px; */
+    /* transform: translate(-50%, -50%); */
+    font-weight: bold;
+    width: 450px;
+    height: 450px;
+    z-index: 300;
+}
+.stamp_canvas .stamp_dot_text > div { pointer-events: auto;}
+
+.stamp_dot_text > .stamp_b_name {
+    position: absolute;
+    font-size: 40px;
+    right: 20px;
+    bottom: 50%;
+    transform: translateY(-100%);
+    z-index: 300;
+}
+.stamp_dot_text > .stamp_b_num1 {
+    position: absolute;
+    font-size: 40px;
+    right: 40px;
+    top: 55%;
+    z-index: 300;
+}
+.stamp_dot_text > .stamp_b_num2 {
+    position: absolute;
+    font-size: 40px;
+    right: 50px;
+    top: 65%;
+    z-index: 300;
+}
+.stamp_dot_text > .stamp_b_num3 {
+    position: absolute;
+    font-size: 40px;
+    right: 60px;
+    top: 75%;
+    z-index: 300;
+}
+.stamp_dot_text > .stamp_c_div > div { z-index: 400;} 
+.stamp_dot_text > .stamp_c_top > div { top: 15px; }
+.stamp_dot_text > .stamp_c_bottom > div { bottom: 15px; }
+.stamp_dot_text > .preview_c_top > div { top: -5px; }
+.stamp_dot_text > .preview_c_bottom > div { bottom: -5px; }
+.dot_preview_circle .stamp_c_top > div { top: -5px;}
+.dot_preview_circle .stamp_c_bottom > div { bottom: -3px;}
+.dot_preview_circle .stamp_dot_text > .stamp_b_name { 
+    font-size: 13px;
+    right: 8px;
+    transform: translateY(0%);
+}
+.dot_preview_circle .stamp_dot_text > .stamp_b_num1 {
+    font-size: 13px;
+    top:47%;
+    right: 13px;
+}
+.dot_preview_circle .stamp_dot_text > .stamp_b_num2 {
+    font-size: 13px;
+    top:57%;
+    right: 17px;
+}
+.dot_preview_circle .stamp_dot_text > .stamp_b_num3 {
+    font-size: 13px;
+    top:67%;
+    right: 23px;
+}
+
+/* .stamp_canvas .clip_path_area .img_scale > div {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border: 1px solid black;
+    background-color: white;
+}
+.stamp_canvas .clip_path_area .img_scale > .anchor_leftup {
+    top:0; left: 0; transform: translate(-50%, -50%);
+}
+
+.stamp_canvas .clip_path_area .img_scale > .anchor_leftdown {
+    top:100%; left: 0; transform: translate(-50%, -50%);
+}
+
+.stamp_canvas .clip_path_area .img_scale > .anchor_rightup {
+    top:0; right: 0; transform: translate(50%, -50%);
+}
+
+.stamp_canvas .clip_path_area .img_scale > .anchor_rightdown {
+    top:100%; right: 0; transform: translate(50%, -50%);
+} */
+
+
+/* .stamp_canvas .clip_path_area .img_scale {
+
+} */
+
+/* .stamp_canvas .clip_path_area::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    border: 2px solid red;
+} */
+
+.stamp_canvas .stamp_div {
+    border: 6px solid black;
+    width: 450px;
+    height: 450px;
+    border-radius: 50%;
+    /* margin: 125px; */
+    overflow: hidden;
+    position: absolute;
+    /* left:125px;
+    top:125px; */
+    top:0;
+    pointer-events: none;
+}
+
+.stamp_canvas .stamp_div > .stamp_circle_line {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    width: 150px;
+    height: 5px;
+    background-color: black;
+    transform: translateY(-50%);
+}
+
+.stamp_canvas .stamp_div > .stamp_circle {
+    position: absolute;
+    top: 50%;
+    right: 150px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: black;
+    transform: translate(50%, -50%);
+}
+
+/* .stamp_canvas .stamp_div img { height: 446px; object-fit: contain;} */
+.stamp_canvas .stamp_div .anchor {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    transform: translate(-50%, -50%);
+    border: 1px solid black;
+    background-color: white;
+}
+
+.pg_line {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 10px;
+    font-size: 14px;
+}
+.pg_line > button { cursor: pointer; }
+.pg_line .progress-bar {
+    width: 160px;
+    height: 15px;
+    margin : 0 5px;
+    border-radius: 8px;
+}
+.pg_line .progress-bar .progress-bar-fill {
+    border-radius: 8px 0 0 8px;
+}
+.pg_line .progress-bar button {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: white;
+    top: 0;
+    border-radius: 50%;
+    transform: translate(-50%, -15%);
+    border: 1px solid gray;
+}

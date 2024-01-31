@@ -1,0 +1,34 @@
+@font-face {
+    font-family: "Jua";
+    src: url("./BMJUA_ttf.woff");
+}
+
+@font-face {
+    font-family: "Hanna";
+    src: url("./BMHANNA_11yrs_ttf.woff");
+}
+
+@font-face {
+    font-family: "Nanum Gothic";
+    src: url("./NanumGothic.woff");
+}
+
+@font-face {
+    font-family: "Nanum Square";
+    src: url("./NanumSquareR.woff");
+}
+
+@font-face {
+    font-family: "Nanum Myeongjo";
+    src: url("./NanumMyeongjo.woff");
+}
+
+@font-face {
+    font-family: "Monsori";
+    src: url("./TmonMonsori.ttf.woff");
+}
+
+@font-face {
+    font-family: "GodoMaum";
+    src: url("./godoMaum.woff");
+}

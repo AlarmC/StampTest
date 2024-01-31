@@ -1,0 +1,132 @@
+.temp_wrap {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.temp_flex {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.temp_flex .temp_area1 {
+    width: 300px;
+    height: 480px;
+    position: relative;
+}
+.temp_flex .temp_area1 ul {
+    overflow: auto;
+    height: 330px;
+}
+.temp_flex .temp_area1 li {
+    height: 40px;
+    padding-left: 15px;
+    border: 1px solid rgb(211,211,211);
+}
+
+.temp_flex .temp_area1 li span {
+    line-height: 41px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.temp_flex .temp_area1 li svg {
+    float: right;
+    margin-top: 11px;
+    margin-right: 20px;
+    background-color: white;
+    border-radius: 25px;
+}
+
+.temp_flex .temp_area1 .camera_area {
+    position: absolute;
+    left: 100%;
+    top: 0px;
+    width: 900px;
+    height: 480px;
+    background-color: #333;
+}
+
+.temp_flex .temp_area1 .camera_area .camera_header {
+    height: 50px;
+    color:white;
+    padding-left: 20px;
+    font-size: 20px;
+    line-height: 50px;
+    background-color: rgb(31, 36, 45);
+}
+.temp_flex .temp_area1 .camera_area .camera_header > h3 { display: inline-block; }
+.temp_flex .temp_area1 .camera_area .camera_header > div {
+    float:right; 
+    width: 60px; 
+    background-color: rgb(47, 56, 74);
+}
+.temp_flex .temp_area1 .camera_area img {
+    margin: auto;
+}
+
+.temp_flex .temp_area2 {
+    width: 800px;
+    height: 450px;
+}
+.temp_flex .temp_area2 .temp_info_header {
+    display: flex;
+    justify-content: space-between;
+}
+.temp_flex .temp_area2 .temp_info_header .temp_info_hd_title {
+    width: 200px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    text-align: center;
+    background-color: rgb(27,107,169);
+    color:white;
+    font-size: 17px;
+    line-height: 30px;
+}
+.temp_flex .temp_area2 .temp_info_header .temp_info_btn_area {
+    background-color: rgb(0, 136, 190);
+    color: white;
+    border-radius: 8px;
+    height: 26px;
+    line-height: 20px;
+    margin-top: 3px;
+}
+.temp_flex .temp_area2 .temp_info_header button { width: 120px; }
+
+.temp_flex .temp_area2 .temp_river_info {
+    height: 450px;
+    border:1px solid rgb(19, 77, 121);
+    /* background-color: skyblue; */
+    display: flex;
+    justify-content: space-between;
+}
+
+.temp_flex .temp_area2 .temp_river_info img {
+    line-height: 450px;
+    height: 100%;
+    width: 400px;
+    object-fit: contain;
+}
+
+.temp_flex .temp_area2 .temp_river_info .temp_river_header {
+    float:right;
+    font-size: 14px;
+    margin-right: 5px;
+}
+
+.temp_flex .temp_area2 .temp_river_info table {
+    width: 350px;
+    text-align: center;
+    font-size: 12px;
+    background-color: white;
+    float: right;
+    margin-right: 10px;
+}
+.temp_flex .temp_area2 .temp_river_info table th {
+    border: 1px solid gray;
+    background-color: rgb(211,211,211);
+}
+.temp_flex .temp_area2 .temp_river_info table td {
+    border: 1px solid gray;
+    background-color: white;
+}

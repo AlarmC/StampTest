@@ -1,0 +1,94 @@
+/* * { margin: 0; }
+
+body {
+  font: 1em/1.125 trebuchet ms, verdana, sans-serif;
+  text-align: center;
+}
+
+article { margin-bottom: 0.5em; }
+
+h3 { font-size: 1.75em; line-height: 2; }
+
+section {
+  --w: min(calc(100vw - 1.5em), 30em);
+  --h: calc(3 / 2 * var(--w));
+  display: grid;
+  place-content: center;
+  grid-gap: 0 0.5em;
+  --dots: radial-gradient(circle, #000, #fff) 0 0/6px 6px space;
+}
+
+h4 {
+  font-size: 1.25em;
+  text-transform: uppercase;
+}
+
+div {
+  width: var(--w);
+  height: var(--h);
+  background: var(--lyr0, var(--img)) var(--sep, ' ') var(--lyr1, ' ');
+}
+
+.halftone {
+  --lyr1: var(--dots);
+  overflow: hidden;
+  filter: contrast(19);
+}
+
+.noproc {
+  --img: url(https://assets.codepen.io/2017/portrait_woman.jpg) 50%/cover;
+}
+
+.noproc .halftone {
+  --sep: ',';
+  background-blend-mode: screen;
+}
+
+.filter {
+  --img: url(https://assets.codepen.io/2017/portrait_tiger.jpg) 50%/cover;
+}
+
+.filter .halftone {
+  --lyr0: '';
+  position: relative;
+}
+
+.filter .halftone::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: var(--img);
+  filter: blur(3px) brightness(1.15) grayscale(1);
+  mix-blend-mode: screen;
+  content: '';
+} */
+
+
+select {
+  margin-bottom:0.5em;
+}
+
+.frame {
+  position:relative;
+  width:90vw;
+  height:90vh;
+}
+
+.frame canvas, .frame img {
+  object-fit:contain;
+  /* width:100%;
+  height:100%; */
+  display:block;
+  position:absolute;top:0;left:0;
+}
+
+#elImg {
+  opacity:0;
+  transition:all 1s;
+}
+
+#elImg.show {
+  opacity:1;
+}
